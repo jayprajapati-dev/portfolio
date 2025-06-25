@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jay Prajapati - Professional Web Developer & Digital Marketing Expert. Specializing in website development, Python, Java, and digital marketing solutions.">
+    <meta name="keywords" content="Jay Prajapati, Web Developer, Digital Marketing Expert, Python Developer, Java Developer, Website Development, Portfolio">
+    <meta name="author" content="Jay Prajapati">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a192f">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jayprajapati-dev.github.io/">
+    <meta property="og:title" content="Jay Prajapati - Web Developer & Digital Marketing Expert">
+    <meta property="og:description" content="Professional Web Developer & Digital Marketing Expert specializing in website development, Python, Java, and digital marketing solutions.">
+    <meta property="og:image" content="favicon/favicon-32x32.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jayprajapati-dev.github.io/">
+    <meta property="twitter:title" content="Jay Prajapati - Web Developer & Digital Marketing Expert">
+    <meta property="twitter:description" content="Professional Web Developer & Digital Marketing Expert specializing in website development, Python, Java, and digital marketing solutions.">
+    <meta property="twitter:image" content="favicon/favicon-32x32.png">
+    
+    <title>Jay Prajapati - Web Developer & Digital Marketing Expert</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00ff9d">
+    <meta name="msapplication-TileColor" content="#0a192f">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/script.js" defer></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jay Prajapati",
+        "url": "https://jayprajapati-dev.github.io/",
+        "image": "favicon/favicon-32x32.png",
+        "sameAs": [
+            "https://github.com/jayprajapati-dev",
+            "https://www.linkedin.com/in/jayprajapati171120/",
+            "https://www.instagram.com/prajapati_jay_1711/"
+        ],
+        "jobTitle": "Web Developer & Digital Marketing Expert",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        },
+        "description": "Professional Web Developer & Digital Marketing Expert specializing in website development, Python, Java, and digital marketing solutions."
+    }
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <a href="index.html" class="logo">JP</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#github-stats">GitHub Stats</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Backdrop -->
+    <div class="mobile-menu-backdrop"></div>
+
+    <main> 
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Jay Prajapati</h1>
+                <p class="bio">Aspiring developer & tech enthusiast. Passionate about coding, websites, and digital marketing.</p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="cta-button">About Me</a>
+                    <a href="#" class="cta-button secondary" id="resumeBtn">Download Resume</a>
+                    <a href="#contact" class="cta-button">Get in Touch</a>
+                </div>
+                <div class="cli-interface">
+                    <div class="cli-header">
+                        <span class="cli-title">Terminal</span>
+                        <div class="cli-controls">
+                            <span class="cli-button close"></span>
+                            <span class="cli-button minimize"></span>
+                            <span class="cli-button maximize"></span>
+                        </div>
+                    </div>
+                    <div class="cli-body">
+                        <div class="cli-output" id="cliOutput">
+                            
+                        </div>
+                        <div class="cli-input-line">
+                            <span class="cli-prompt">$</span>
+                            <input type="text" id="cliInput" class="cli-input" autofocus>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>C Programming</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Java</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Python</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>HTML</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>CSS</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Bootstrap</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Flask</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Other Skills -->
+                <div class="skill-category">
+                    <h3>Tools & Other Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Visual Studio Code</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Website Development</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Digital Marketing</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Facebook Ads</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Microsoft Office</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Code Editor -->
+        <section class="code-editor">
+            <h2>Live Code Editor</h2>
+            <div class="editor-container">
+                <div class="editor-tabs">
+                    <button class="tab-btn active" data-tab="html">HTML</button>
+                    <button class="tab-btn" data-tab="css">CSS</button>
+                    <button class="tab-btn" data-tab="js">JavaScript</button>
+                </div>
+                <div class="editor-content">
+                    <div class="editor-pane">
+                        <div class="editor-header">
+                            <span class="editor-title">Code Editor</span>
+                            <div class="editor-controls">
+                                <button class="run-btn">Run</button>
+                                <button class="reset-btn">Reset</button>
+                            </div>
+                        </div>
+                        <div class="editor-body">
+                            <textarea id="htmlEditor" class="editor-textarea active" spellcheck="false"></textarea>
+                            <textarea id="cssEditor" class="editor-textarea" spellcheck="false"></textarea>
+                            <textarea id="jsEditor" class="editor-textarea" spellcheck="false"></textarea>
+                        </div>
+                    </div>
+                    <div class="preview-pane">
+                        <div class="preview-header">
+                            <span class="preview-title">Preview</span>
+                        </div>
+                        <div class="preview-body">
+                            <iframe id="previewFrame" class="preview-frame active"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="github-stats" class="github-stats">
+            <h2>GitHub Statistics</h2>
+            <div class="stats-container">
+                <div class="stats-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Contributions</h3>
+                    <div id="contributions" class="stats-value">Loading...</div>
+                </div>
+                <div class="stats-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Followers</h3>
+                    <div id="followers" class="stats-value">Loading...</div>
+                </div>
+                <div class="stats-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Repositories</h3>
+                    <div id="repositories" class="stats-value">Loading...</div>
+                </div>
+                <div class="stats-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Languages</h3>
+                    <div id="languages" class="stats-value">Loading...</div>
+                </div>
+            </div>
+            <div class="contribution-graph">
+                <h3>Contribution Activity</h3>
+                <div class="contribution-calendar">
+                    <div id="contributionGraph" class="graph-container">
+                        <img src="https://ghchart.rshah.org/00ff9d/jayprajapati-dev" alt="Jay Prajapati's GitHub Contribution Graph" class="contribution-img">
+                    </div>
+                    <p class="graph-note">GitHub Contributions in Last Year</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="projects-controls">
+                <div class="search-box">
+                    <input type="text" id="projectSearch" placeholder="Search projects...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://github.com/jayprajapati-dev" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jayprajapati171120/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/prajapati_jay_1711/" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Jay Prajapati. All rights reserved.</p>
+        <div align="center">
+            🚀 Made with ❤️ by <b>Jay Prajapati</b>  
+            <br>Let's connect and build something amazing together! 🌍✨  
+        </div>
+    </footer>
+
+    <!-- Add required libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skulpt/1.2.0/skulpt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skulpt/1.2.0/skulpt-stdlib.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wasm-loader/1.0.0/wasm-loader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
